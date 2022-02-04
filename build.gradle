@@ -4,14 +4,15 @@ plugins {
 	id 'java'
 }
 
-//jar {
+jar {
+	baseName = 'demo'
 //	manifest {
 //		attributes(
 //				'Main-Class': 'com.example.demo.DemoApplication.main'
 //		)
 //
 //	}
-//}
+}
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
@@ -22,7 +23,7 @@ repositories {
 }
 
 dependencies {
-	compile 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
